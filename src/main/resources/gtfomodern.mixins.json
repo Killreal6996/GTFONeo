@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixins",
+  "package": "com.poroteamdev.gtfomodern.mixins",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "examplemod.refmap.json",
+  "refmap": "gtfomodern.refmap.json",
   "mixins": [
   ],
   "client": [
