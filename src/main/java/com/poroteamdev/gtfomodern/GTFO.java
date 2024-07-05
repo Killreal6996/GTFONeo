@@ -4,15 +4,17 @@ import com.gregtechceu.gtceu.utils.FormattingUtil;
 import com.lowdragmc.lowdraglib.Platform;
 import com.poroteamdev.gtfomodern.config.ConfigHolder;
 
+import com.poroteamdev.gtfomodern.tools.tools;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
 import com.mojang.logging.LogUtils;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import org.slf4j.Logger;
 
 @Mod(GTFO.MODID)
@@ -20,17 +22,26 @@ public class GTFO {
     public static final String MODID = "gtfomodern";
     public static final String NAME = "GregTechCEu";
     public static final Logger LOGGER = LogUtils.getLogger();
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
-    public static final DeferredItem<Item> BAG_OF_NAQUACHIPS = ITEMS.registerSimpleItem("bag_of_naquachips", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
     public GTFO(IEventBus modEventBus) {
+        tools.register(modEventBus);
         ConfigHolder.init();
         GTFO.init();
+        modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(this::commonSetup);
+
     }
     public static void init() {
         LOGGER.info("{} is initializing on platform: {}", NAME, Platform.platformName());
     }
 
+    private void commonSetup(final FMLCommonSetupEvent event) {}
+    
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept((ItemLike) tools.NAQUACHIP);
+        }
+    }
+    
     private static ResourceLocation id(String path) {
         return ResourceLocation.fromNamespaceAndPath(MODID, FormattingUtil.toLowerCaseUnder(path));
     }
@@ -45,5 +56,5 @@ public class GTFO {
         }
         return ResourceLocation.fromNamespaceAndPath(strings[0], strings[1]);
     }
-    
+
 }
