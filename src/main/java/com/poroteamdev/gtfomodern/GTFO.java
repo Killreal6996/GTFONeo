@@ -4,6 +4,8 @@ import com.gregtechceu.gtceu.utils.FormattingUtil;
 import com.lowdragmc.lowdraglib.Platform;
 import com.poroteamdev.gtfomodern.config.ConfigHolder;
 
+import com.poroteamdev.gtfomodern.crops.CrobBlocks;
+import com.poroteamdev.gtfomodern.crops.seeds;
 import com.poroteamdev.gtfomodern.food.items;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -19,8 +21,13 @@ public class GTFO {
     public static final String NAME = "GregTechCEu";
     public static final Logger LOGGER = LogUtils.getLogger();
     public GTFO(IEventBus modEventBus) {
+        //Registering classes
         ModTabs.register(modEventBus);
-        items.register(modEventBus);
+        items.ITEMS.register(modEventBus);
+        CrobBlocks.BLOCKS.register(modEventBus);
+        seeds.ITEMS.register(modEventBus);
+        //
+        //Initializing
         ConfigHolder.init();
         GTFO.init();
         //modEventBus.addListener(this::addCreative);

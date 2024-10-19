@@ -1,6 +1,7 @@
 package com.poroteamdev.gtfomodern;
 
 import com.poroteamdev.gtfomodern.food.items;
+import com.poroteamdev.gtfomodern.crops.seeds;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class ModTabs {
                     .title(Component.translatable("creativetab.gtfofoodtab"))
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(items.NAQUACHIP.get());
+                        //pOutput.accept(items.TOMATO_SEEDS.get());
                     }))
                     .build());
 
