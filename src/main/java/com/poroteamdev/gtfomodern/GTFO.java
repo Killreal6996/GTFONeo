@@ -4,7 +4,7 @@ import com.gregtechceu.gtceu.utils.FormattingUtil;
 import com.lowdragmc.lowdraglib.Platform;
 import com.poroteamdev.gtfomodern.config.ConfigHolder;
 
-import com.poroteamdev.gtfomodern.crops.CrobBlocks;
+import com.poroteamdev.gtfomodern.crops.CropBlocks;
 import com.poroteamdev.gtfomodern.crops.seeds;
 import com.poroteamdev.gtfomodern.food.items;
 import net.minecraft.resources.ResourceLocation;
@@ -24,7 +24,7 @@ public class GTFO {
         //Registering classes
         ModTabs.register(modEventBus);
         items.ITEMS.register(modEventBus);
-        CrobBlocks.BLOCKS.register(modEventBus);
+        CropBlocks.BLOCKS.register(modEventBus);
         seeds.ITEMS.register(modEventBus);
         //
         //Initializing

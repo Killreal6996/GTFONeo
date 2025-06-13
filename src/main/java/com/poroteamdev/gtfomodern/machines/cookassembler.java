@@ -1,4 +1,3 @@
 package com.poroteamdev.gtfomodern.machines;
 
-public class cookassembler {
-}
+public class cookassembler {}

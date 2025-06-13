@@ -1,7 +1,6 @@
 package com.poroteamdev.gtfomodern.config;
 
 import com.poroteamdev.gtfomodern.GTFO;
-
 import dev.toma.configuration.Configuration;
 import dev.toma.configuration.config.Config;
 import dev.toma.configuration.config.format.ConfigFormats;
