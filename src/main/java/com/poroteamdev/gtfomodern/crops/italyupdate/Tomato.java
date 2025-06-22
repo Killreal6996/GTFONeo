@@ -8,19 +8,20 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-import com.poroteamdev.gtfomodern.crops.seeds;
+import com.poroteamdev.gtfomodern.crops.Seeds;
 
-public class tomato extends CropBlock {
+public class Tomato extends CropBlock {
     public static final int MAX_AGE = 5;
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
+    public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 4);
+            //BlockStateProperties.AGE_5;
 
-    public tomato(Properties pProperties) {
+    public Tomato(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return seeds.TOMATO_SEEDS.get();
+        return Seeds.TOMATO_SEEDS.get();
     }
 
     @Override

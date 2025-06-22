@@ -1,13 +1,13 @@
-package com.poroteamdev.gtfomodern.food;
+package com.poroteamdev.gtfomodern.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
-public class fooditems {
+public class Fooditems {
     public static final FoodProperties NAQUACHIP = new FoodProperties.Builder()
             .nutrition(2)
             .saturationModifier(0.2f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 0.1f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 1f)
             .build();
 }

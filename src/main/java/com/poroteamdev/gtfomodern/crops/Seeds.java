@@ -6,7 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class seeds {
+public class Seeds {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems("gtfomodern");
 
     public static final DeferredHolder<Item, Item> TOMATO_SEEDS = ITEMS.register(

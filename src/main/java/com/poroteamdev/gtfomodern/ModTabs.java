@@ -8,8 +8,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import com.poroteamdev.gtfomodern.food.items;
-import com.poroteamdev.gtfomodern.crops.seeds;
+import com.poroteamdev.gtfomodern.item.Items;
+import com.poroteamdev.gtfomodern.crops.Seeds;
 
 public class ModTabs {
     public static final DeferredRegister<CreativeModeTab> GTFO_TAB =
@@ -17,11 +17,11 @@ public class ModTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FOOD_TAB =
             GTFO_TAB.register("food_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(items.NAQUACHIP.get()))
+                    .icon(() -> new ItemStack(Items.NAQUACHIP.get()))
                     .title(Component.translatable("creativetab.gtfofoodtab"))
                     .displayItems(((pParameters, pOutput) -> {
-                        pOutput.accept(items.NAQUACHIP.get());
-                        pOutput.accept(seeds.TOMATO_SEEDS.get());
+                        pOutput.accept(Items.NAQUACHIP.get());
+                        pOutput.accept(Seeds.TOMATO_SEEDS.get());
                     }))
                     .build());
 

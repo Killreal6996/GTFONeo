@@ -5,8 +5,8 @@ import com.lowdragmc.lowdraglib.Platform;
 import com.poroteamdev.gtfomodern.config.ConfigHolder;
 
 import com.poroteamdev.gtfomodern.crops.CropBlocks;
-import com.poroteamdev.gtfomodern.crops.seeds;
-import com.poroteamdev.gtfomodern.food.items;
+import com.poroteamdev.gtfomodern.crops.Seeds;
+import com.poroteamdev.gtfomodern.item.Items;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -23,9 +23,9 @@ public class GTFO {
     public GTFO(IEventBus modEventBus) {
         //Registering classes
         ModTabs.register(modEventBus);
-        items.ITEMS.register(modEventBus);
+        Items.ITEMS.register(modEventBus);
         CropBlocks.BLOCKS.register(modEventBus);
-        seeds.ITEMS.register(modEventBus);
+        Seeds.ITEMS.register(modEventBus);
         //
         //Initializing
         ConfigHolder.init();
