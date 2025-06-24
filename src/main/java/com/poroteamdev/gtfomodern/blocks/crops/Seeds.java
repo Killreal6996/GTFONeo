@@ -1,4 +1,4 @@
-package com.poroteamdev.gtfomodern.crops;
+package com.poroteamdev.gtfomodern.blocks.crops;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;

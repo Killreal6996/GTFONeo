@@ -1,4 +1,4 @@
-package com.poroteamdev.gtfomodern.ItemsCustom;
+package com.poroteamdev.gtfomodern.registration;
 
 
 import net.minecraft.ChatFormatting;
@@ -43,10 +43,15 @@ public class SpicyFoodItems extends Item {
     }
 
     private static Holder<MobEffect> getSpiciness(int spiciness) {
-        if (spiciness >= 2_000_000) return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.WITHER.value());
-        if (spiciness >= 500_000) return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.POISON.value());
-        if (spiciness >= 100_000) return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.CONFUSION.value());
-        if (spiciness >= 50_000) return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.FIRE_RESISTANCE.value());
+        if (spiciness >= 2_000_000)
+            return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.WITHER.value());
+        if (spiciness >= 500_000)
+            return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.POISON.value());
+        if (spiciness >= 100_000)
+            return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.CONFUSION.value());
+        if (spiciness >= 50_000)
+            return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.FIRE_RESISTANCE.value());
+
         return BuiltInRegistries.MOB_EFFECT.wrapAsHolder(MobEffects.DIG_SLOWDOWN.value());
     }
 
@@ -81,8 +86,12 @@ public class SpicyFoodItems extends Item {
         tooltipComponents.add(Component.translatable("tooltip.gtfomodern.naquachip"));
         if (spiciness > 0) {
             tooltipComponents.add(Component.empty());
-            ChatFormatting color = ChatColorFromSpiciness(spiciness);
-            tooltipComponents.add(Component.translatable("tooltip.gtfomodern.spiciness",spiciness/1000 + "K SHU"));
+            Component spicyText = Component.translatable("tooltip.gtfomodern.spiciness",
+                            spiciness / 1000 + "K SHU")
+                    .withStyle(ChatColorFromSpiciness(spiciness));
+            tooltipComponents.add(spicyText);
+            //ChatFormatting color = ChatColorFromSpiciness(spiciness);
+            //tooltipComponents.add(Component.translatable("tooltip.gtfomodern.spiciness",spiciness/1000 + "K SHU"));
         }
         super.appendHoverText(pStack, pContext, tooltipComponents, pTooltipFlag);
     }

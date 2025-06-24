@@ -1,8 +1,13 @@
 {
+  "creativetab.gtfofoodtab": "GTFO: Food Tab",
+
   "item.gtfomodern.naquachip": "Naqua Chips",
   "tooltip.gtfomodern.naquachip": "Taste like metal, but blow your mind.",
-  "tooltip.gtfomodern.spiciness": "\"\uD83C\uDF36 Spicy level: %s",
-  "creativetab.gtfofoodtab": "GTFO: Food Tab",
-  "item.gtfomodern.tomato_seeds": "Tomato Seeds",
-  "item.gtfomodern.pan": "Pan"
+  "tooltip.gtfomodern.spiciness": "\uD83C\uDF36 Spicy level: %s",
+
+  "item.gtfomodern.tomato": "Tomato",
+  "tooltip.gtfomodern.tomato": "Juicy and fresh",
+
+  "item.gtfomodern.tomato_seeds": "Tomato Seeds"
+
 }

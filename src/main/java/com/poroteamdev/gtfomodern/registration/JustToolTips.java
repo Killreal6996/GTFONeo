@@ -1,4 +1,4 @@
-package com.poroteamdev.gtfomodern.ItemsCustom;
+package com.poroteamdev.gtfomodern.registration;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;

@@ -4,8 +4,8 @@ import com.gregtechceu.gtceu.utils.FormattingUtil;
 import com.lowdragmc.lowdraglib.Platform;
 import com.poroteamdev.gtfomodern.config.ConfigHolder;
 
-import com.poroteamdev.gtfomodern.crops.CropBlocks;
-import com.poroteamdev.gtfomodern.crops.Seeds;
+import com.poroteamdev.gtfomodern.blocks.crops.CropBlocks;
+import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
 import com.poroteamdev.gtfomodern.item.Items;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;

@@ -1,6 +1,7 @@
 package com.poroteamdev.gtfomodern.item;
 
-import com.poroteamdev.gtfomodern.ItemsCustom.SpicyFoodItems;
+import com.poroteamdev.gtfomodern.registration.JustToolTips;
+import com.poroteamdev.gtfomodern.registration.SpicyFoodItems;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -15,6 +16,12 @@ public class Items {
                             .food(Fooditems.NAQUACHIP)
                             .setNoRepair(),
                     5_000_000
+                    ));
+    public static final DeferredHolder<Item, Item> TOMATO =
+            ITEMS.register("tomato", () -> new JustToolTips(
+                    new Item.Properties()
+                            .food(Fooditems.VEGETABLE)
+                            .setNoRepair()
                     ));
 
     //Item register

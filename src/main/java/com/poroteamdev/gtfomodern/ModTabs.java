@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import com.poroteamdev.gtfomodern.item.Items;
-import com.poroteamdev.gtfomodern.crops.Seeds;
+import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
 
 public class ModTabs {
     public static final DeferredRegister<CreativeModeTab> GTFO_TAB =
@@ -22,6 +22,7 @@ public class ModTabs {
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(Items.NAQUACHIP.get());
                         pOutput.accept(Seeds.TOMATO_SEEDS.get());
+                        pOutput.accept(Items.TOMATO.get());
                     }))
                     .build());
 
