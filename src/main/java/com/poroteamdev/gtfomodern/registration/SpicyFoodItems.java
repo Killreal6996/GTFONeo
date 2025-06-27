@@ -75,7 +75,7 @@ public class SpicyFoodItems extends Item {
                     player.getY() + 1.0,
                     player.getZ(),
                     Math.min(4.0f, spiciness / 1_000_000f),
-                    Level.ExplosionInteraction.TNT);
+                    Level.ExplosionInteraction.NONE);
         }
         if (spiciness >= 100_000) {
             player.setRemainingFireTicks(Math.min(20, spiciness / 25_000));
@@ -90,8 +90,6 @@ public class SpicyFoodItems extends Item {
                             spiciness / 1000 + "K SHU")
                     .withStyle(ChatColorFromSpiciness(spiciness));
             tooltipComponents.add(spicyText);
-            //ChatFormatting color = ChatColorFromSpiciness(spiciness);
-            //tooltipComponents.add(Component.translatable("tooltip.gtfomodern.spiciness",spiciness/1000 + "K SHU"));
         }
         super.appendHoverText(pStack, pContext, tooltipComponents, pTooltipFlag);
     }

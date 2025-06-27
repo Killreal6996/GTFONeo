@@ -41,7 +41,7 @@ dependencyResolutionManagement {
         def macheteVersion = "1.+"
         def configurationVersion = "2.2.3"
         def ldLibVersion = "1.0.25.r"
-        def spotlessVersion = "6.25.0"
+        def spotlessVersion = "7.0.0"
         def neogradleVersion = "7.0.145"
 
         forge {
