@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 
 
 public class CheeseAgingController {
-    private static final ResourceLocation MACHINE_ID =
+    /*private static final ResourceLocation MACHINE_ID =
             ResourceLocation.fromNamespaceAndPath("gtfomodern", "cheese_aging_factory");
 
     public static final MachineDefinition DEFINITION = registerMachine();
@@ -22,5 +22,5 @@ public class CheeseAgingController {
                     tooltip.add(Component.translatable("tooltip.gtfomodern.cheese_aging_factory"));
                 });
     }
-    DataBankMachine
+    DataBankMachine*/
 }
