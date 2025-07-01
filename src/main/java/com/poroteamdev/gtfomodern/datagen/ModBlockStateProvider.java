@@ -39,7 +39,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String texturename){
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((Tomato) block).getAgeProperty()),
-                ResourceLocation.fromNamespaceAndPath(GTFO.MODID,"block/"+texturename+state.getValue(((Tomato) block).
+                ResourceLocation.fromNamespaceAndPath(GTFO.MODID,"block/crops/italianupdate/tomato/"+texturename+state.getValue(((Tomato) block).
                         getAgeProperty()))).renderType("cutout"));
         return models;
     }

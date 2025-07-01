@@ -9,6 +9,8 @@ import com.poroteamdev.gtfomodern.config.ConfigHolder;
 import com.poroteamdev.gtfomodern.blocks.crops.CropBlocks;
 import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
 import com.poroteamdev.gtfomodern.item.Items;
+import com.poroteamdev.gtfomodern.registration.JustToolTips;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -45,7 +47,12 @@ public class GTFO {
         LOGGER.info("{} is initializing on platform: {}", NAME, Platform.platformName());
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            JustToolTips.registerTooltip(Items.TOMATO.get(),
+                    ()-> Component.translatable("tooltip.gtfomodern.tomato"));
+        });
+    }
     
     public static ResourceLocation id(String path) {
         return ResourceLocation.fromNamespaceAndPath(MODID, FormattingUtil.toLowerCaseUnder(path));
