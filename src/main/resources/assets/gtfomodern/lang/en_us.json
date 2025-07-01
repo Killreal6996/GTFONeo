@@ -1,13 +1,22 @@
 {
-  "creativetab.gtfofoodtab": "GTFO: Food Tab",
+  "creativetab.gtfofoodtab": "GTFO: Food",
+  "creativetab.gtfocroptab": "GTFO: Crops",
+  "creativetab.gtfocomponentedibletab": "GTFO: Edible components",
+  "creativetab.gtfocomponentinedibletab": "GTFO: Inedible components",
+  "creativetab.gtfoinstrumentsandmachinestab": "GTFO: Machines and instruments",
 
   "item.gtfomodern.naquachip": "Naqua Chips",
+
+  "item.gtfomodern.peeled_potato": "Peeled potato",
+  "item.gtfomodern.potato_chip": "Potato chip",
+  "item.gtfomodern.naquadah_chip": "Naquadah potato chip",
+  "item.gtfomodern.plastic_bag": "Plastic bag",
+  "item.gtfomodern.tomato": "Tomato",
+
+  "item.gtfomodern.tomato_seeds": "Tomato Seeds",
+
   "tooltip.gtfomodern.naquachip": "Taste like metal, but blow your mind.",
   "tooltip.gtfomodern.spiciness": "\uD83C\uDF36 Spicy level: %s",
-
-  "item.gtfomodern.tomato": "Tomato",
-  "tooltip.gtfomodern.tomato": "Juicy and fresh",
-
-  "item.gtfomodern.tomato_seeds": "Tomato Seeds"
+  "tooltip.gtfomodern.tomato": "Juicy and fresh"
 
 }

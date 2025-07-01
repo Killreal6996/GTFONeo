@@ -1,0 +1,38 @@
+{
+  "type": "gtceu:distillery",
+  "duration": 100,
+  "inputs": {
+    "fluid": [
+      {
+        "chance": 1.0,
+        "content": {
+          "amount": 1000,
+          "ingredient": {
+            "tag": "c:water"
+          }
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "fluid": [
+      {
+        "chance": 1.0,
+        "content": {
+          "amount": 1000,
+          "ingredient": {
+            "fluid": "gtceu:isopropyl_chloride"
+          }
+        }
+      }
+    ]
+  },
+  "tickInputs": {
+    "eu": [
+      {
+        "chance": 1.0,
+        "content": 30
+      }
+    ]
+  }
+}

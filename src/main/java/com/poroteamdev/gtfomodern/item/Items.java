@@ -1,9 +1,11 @@
 package com.poroteamdev.gtfomodern.item;
 
+import com.poroteamdev.gtfomodern.blocks.crops.CropBlocks;
 import com.poroteamdev.gtfomodern.registration.JustToolTips;
 import com.poroteamdev.gtfomodern.registration.SpicyFoodItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -20,6 +22,7 @@ public class Items {
                             .setNoRepair(),
                     5_000_000
                     ));
+
     public static final DeferredHolder<Item, Item> TOMATO = ITEMS.register("tomato",
             () -> new JustToolTips(
                     new Item.Properties()
@@ -27,13 +30,41 @@ public class Items {
                             .setNoRepair()
                     )
             );
-    //Tooltip init and register
-    /*private static DeferredHolder<Item, Item> registerWithTooltip(String string, Supplier<Item> itemSupplier, String tooltipKey){
-        DeferredHolder<Item, Item> holder = ITEMS.register(string, itemSupplier);
-        JustToolTips.registerTooltip(holder.get(),
-                () -> Component.translatable(tooltipKey));
-        return holder;
-    }*/
+
+    public static final DeferredHolder<Item, Item> PEELED_POTATO = ITEMS.register(
+            "peeled_potato",
+            () -> new JustToolTips(
+                    new Item.Properties()
+                            .food(Fooditems.VEGETABLE)
+                            .setNoRepair()
+            )
+    );
+
+    public static final DeferredHolder<Item, Item> POTATO_CHIP = ITEMS.register(
+            "potato_chip",
+            () -> new JustToolTips(
+                    new Item.Properties()
+                            .food(Fooditems.VEGETABLE)
+                            .setNoRepair()
+            )
+    );
+
+    public static final DeferredHolder<Item, Item> NAQUADAH_CHIP = ITEMS.register(
+            "naquadah_chip",
+            () -> new JustToolTips(
+                    new Item.Properties()
+                            .food(Fooditems.VEGETABLE)
+                            .setNoRepair()
+            )
+    );
+
+    public static final DeferredHolder<Item, Item> PLASTIC_BAG = ITEMS.register(
+            "plastic_bag",
+            () -> new JustToolTips(
+                    new Item.Properties()
+            )
+    );
+
 
     //Item register
     public static void register(IEventBus modEventBus) {

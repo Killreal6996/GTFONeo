@@ -1,0 +1,67 @@
+{
+  "type": "gtceu:cutter",
+  "duration": 20,
+  "inputs": {
+    "fluid": [
+      {
+        "chance": 1.0,
+        "content": {
+          "amount": 1,
+          "ingredient": {
+            "tag": "c:lubricant"
+          }
+        }
+      }
+    ],
+    "item": [
+      {
+        "chance": 1.0,
+        "content": {
+          "count": 1,
+          "ingredient": {
+            "item": "gtfomodern:peeled_potato"
+          }
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "item": [
+      {
+        "chance": 1.0,
+        "content": {
+          "count": 30,
+          "ingredient": {
+            "type": "neoforge:components",
+            "components": {
+              "minecraft:attribute_modifiers": {
+                "modifiers": []
+              },
+              "minecraft:enchantments": {
+                "levels": {}
+              },
+              "minecraft:food": {
+                "nutrition": 2,
+                "saturation": 0.8
+              },
+              "minecraft:lore": [],
+              "minecraft:max_stack_size": 64,
+              "minecraft:rarity": "common",
+              "minecraft:repair_cost": 0
+            },
+            "items": "gtfomodern:potato_chip",
+            "strict": true
+          }
+        }
+      }
+    ]
+  },
+  "tickInputs": {
+    "eu": [
+      {
+        "chance": 1.0,
+        "content": 30
+      }
+    ]
+  }
+}

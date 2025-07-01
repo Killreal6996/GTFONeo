@@ -1,4 +1,8 @@
-// 1.21	2025-07-01T01:58:31.3581137	Item Models: gtfomodern
+// 1.21	2025-07-01T20:53:01.1391615	Item Models: gtfomodern
 ce662f0dea0533f136b527883a321409bc831b7c assets/gtfomodern/models/item/naquachip.json
+36f5a6ddb18d64a1d633a51f009fe3ec2d347430 assets/gtfomodern/models/item/naquadah_chip.json
+aa53802244b81b8faf94eb7a95f94de4f0640a83 assets/gtfomodern/models/item/peeled_potato.json
+031975b00e3e86a7945cc161efbacbf2804acf86 assets/gtfomodern/models/item/plastic_bag.json
+ec022ef2b9e203055dddde68a985b590dee3876c assets/gtfomodern/models/item/potato_chip.json
 e6c9002aa343ca272473ee9f837a094390c42c29 assets/gtfomodern/models/item/tomato.json
 e2daa3a661538b43ea89d8e44e62f8c3cde604c3 assets/gtfomodern/models/item/tomato_seeds.json

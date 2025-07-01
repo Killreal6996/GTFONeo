@@ -1,0 +1,9 @@
+// 1.21	2025-07-01T20:57:35.3473494	Recipes
+591d3f819ef83461ec3add0227d84f04d6ad8f3e data/gtceu/recipe/assembler/plastic_bag.json
+e8850f4ec50bc0715a67e3ae64ca8a9ddf53a839 data/gtceu/recipe/cutter/peeled_potato.json
+adfdec8c9a3f96a09453197194634fa71f295894 data/gtceu/recipe/cutter/potato_chip.json
+9c089e4c5e2fd9ce9c321575ced2ebd916100507 data/gtceu/recipe/cutter/potato_chip_distilled_water.json
+ae53b502b2259f30bc6fc3148c7aefc5e298180d data/gtceu/recipe/cutter/potato_chip_water.json
+61193cd7a8198bc70bba9530f821485d889d04bc data/gtceu/recipe/distillery/test1.json
+d99e1646ea6c53c4cebfac3c84061707f18b5dbc data/gtceu/recipe/mixer/naquadah_chip.json
+f431358f1829276336d8e78e096bdfe8865f97b3 data/gtceu/recipe/packer/naqua_chips.json

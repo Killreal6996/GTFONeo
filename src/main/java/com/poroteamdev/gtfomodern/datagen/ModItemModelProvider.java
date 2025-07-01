@@ -23,6 +23,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         flatItem(Items.TOMATO.get(), "components/natural/tomato");
         flatItem(Items.NAQUACHIP.get(),"food/naquachip");
         flatItem(Seeds.TOMATO_SEEDS.get(),"crops/tomato_seeds");
+        flatItem(Items.PEELED_POTATO.get(),"components/potato/peeled_potato");
+        flatItem(Items.POTATO_CHIP.get(),"components/potato/potato_chip");
+        flatItem(Items.NAQUADAH_CHIP.get(),"components/potato/naquadah_chip");
+        flatItem(Items.PLASTIC_BAG.get(),"components/plastic_bag");
     }
 
     public ItemModelBuilder flatItem(Item item, String string) {
@@ -31,3 +35,4 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("layer0", modLoc("item/"+string));
     }
 }
+
