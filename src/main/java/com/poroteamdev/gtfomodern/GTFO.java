@@ -10,6 +10,7 @@ import com.poroteamdev.gtfomodern.blocks.crops.CropBlocks;
 import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
 import com.poroteamdev.gtfomodern.item.Items;
 import com.poroteamdev.gtfomodern.registration.JustToolTips;
+import com.poroteamdev.gtfomodern.registration.SpicyFoodItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -51,6 +52,8 @@ public class GTFO {
         event.enqueueWork(() -> {
             JustToolTips.registerTooltip(Items.TOMATO.get(),
                     ()-> Component.translatable("tooltip.gtfomodern.tomato"));
+            SpicyFoodItems.registerTooltip(Items.NAQUACHIP.get(),
+                    () -> Component.translatable("tooltip.gtfomodern.naquachip"));
         });
     }
     
