@@ -1,7 +1,7 @@
 package com.poroteamdev.gtfomodern.datagen;
 
 import com.poroteamdev.gtfomodern.GTFO;
-import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
+import com.poroteamdev.gtfomodern.blocks.crops.CropBlocks;
 import com.poroteamdev.gtfomodern.item.Items;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -22,7 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         flatItem(Items.TOMATO.get(), "components/natural/tomato");
         flatItem(Items.NAQUACHIP.get(),"food/naquachip");
-        flatItem(Seeds.TOMATO_SEEDS.get(),"crops/tomato_seeds");
+        flatItem(CropBlocks.TOMATO.seed().get(),"crops/tomato_seeds");
         flatItem(Items.PEELED_POTATO.get(),"components/potato/peeled_potato");
         flatItem(Items.POTATO_CHIP.get(),"components/potato/potato_chip");
         flatItem(Items.NAQUADAH_CHIP.get(),"components/potato/naquadah_chip");

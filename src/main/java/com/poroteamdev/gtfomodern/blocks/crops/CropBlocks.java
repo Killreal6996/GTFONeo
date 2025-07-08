@@ -1,6 +1,7 @@
 package com.poroteamdev.gtfomodern.blocks.crops;
 
 import com.poroteamdev.gtfomodern.blocks.crops.italyupdate.Tomato;
+import com.poroteamdev.gtfomodern.item.Items;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -15,8 +16,13 @@ public class CropBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks("gtfomodern");
 
 
-    public static final DeferredBlock<Block> TOMATO_CROP = registerBlock("tomato_crop",
-            () -> new Tomato(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+    public static final CropRegistration<Tomato> TOMATO = CropRegistration.register(
+            "tomato_crop",
+            () -> new Tomato(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)),
+            "tomato_seeds",
+            Items.TOMATO::get,
+            Tomato.AGE
+    );
 
     /*public static final DeferredHolder<Block, Block> MY_BETTER_BLOCK = BLOCKS.register(
             "my_better_block",

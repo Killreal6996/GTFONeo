@@ -22,7 +22,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        makeCrop(((CropBlock) CropBlocks.TOMATO_CROP.get()),
+        makeCrop(((CropBlock) CropBlocks.TOMATO.block().get()),
                 "tomato_crop.stage", "tomato_crop.stage");
     }
 
