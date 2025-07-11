@@ -46,8 +46,8 @@
                       "duration": 50000,
                       "id": "minecraft:mining_fatigue",
                       "neoforge:cures": [
-                        "protected_by_totem",
-                        "milk"
+                        "milk",
+                        "protected_by_totem"
                       ],
                       "show_icon": true
                     }

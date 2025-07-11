@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "crop": "gtfomodern:block/crops/italianupdate/tomato/tomato_crop.stage3"
-  }
-}

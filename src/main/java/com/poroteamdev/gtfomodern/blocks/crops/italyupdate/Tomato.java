@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
+import com.poroteamdev.gtfomodern.item.GTFOSeeds;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -36,7 +36,7 @@ public class Tomato extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return Seeds.TOMATO_SEEDS.get();
+        return GTFOSeeds.TOMATO_SEEDS.get();
     }
 
     @Override

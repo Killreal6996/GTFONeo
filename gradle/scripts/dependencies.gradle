@@ -72,5 +72,6 @@ dependencies {
 
     if (System.getenv("RUN_SERVER") == null) {
         runtimeOnly("maven.modrinth:embeddium:1.0.0-beta.1+mc1.21")
+        //runtimeOnly("maven.modrinth:embeddium:1.0.0-beta.1+mc1.20.1")
     }
 }

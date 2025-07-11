@@ -1,8 +1,28 @@
-// 1.21	2025-07-01T20:53:01.1391615	Item Models: gtfomodern
+// 1.21	2025-07-12T02:38:01.5907217	Item Models: gtfomodern
+4292717f358905c3c64ffdeaf8a6d1b6d7b5b905 assets/gtfomodern/models/item/banana_pepper.json
+a0993b754bbafde3adbe88ba8400e547116fa68f assets/gtfomodern/models/item/bananopepper_seeds.json
+cfc80998b68c0166462406f449a3a7815178d082 assets/gtfomodern/models/item/bellpepper.json
+4fc210974f4e4c749dd34423841b4efd6936b33e assets/gtfomodern/models/item/bellpepper_seeds.json
+3c099176432450177546bf4477c0ba9bfd4e07e4 assets/gtfomodern/models/item/carolinareaper_seeds.json
+195bf55efa344c1344e2340e032d44ba858d2ceb assets/gtfomodern/models/item/carolina_reaper.json
+f8928aa211a3e0e70d9b80490097b3bad07195d3 assets/gtfomodern/models/item/cayennepepper.json
+2e70aa19d6508b29f0482478e13d4f9fcae46473 assets/gtfomodern/models/item/cayennepepper_seeds.json
+a71c5226de0c4402242ba039f5c7a6e5d1334b70 assets/gtfomodern/models/item/habanero.json
+b0eae1401a60cf3ceb4bdd4f857bac6976bed854 assets/gtfomodern/models/item/habanero_seeds.json
+65acf226019145d6d348372b0e5fdd7425669cf6 assets/gtfomodern/models/item/jalapeno.json
+71c8e497ec620fe26ab3baf985cfa33bd3810511 assets/gtfomodern/models/item/jalapeno_seeds.json
 ce662f0dea0533f136b527883a321409bc831b7c assets/gtfomodern/models/item/naquachip.json
 36f5a6ddb18d64a1d633a51f009fe3ec2d347430 assets/gtfomodern/models/item/naquadah_chip.json
 aa53802244b81b8faf94eb7a95f94de4f0640a83 assets/gtfomodern/models/item/peeled_potato.json
+7164f94c1a8a809c18f3bbf4c97511bb1f82f395 assets/gtfomodern/models/item/pepperonchini_seeds.json
+e43240b512a3343e0e445d544b15011e94147f67 assets/gtfomodern/models/item/pepperoncini.json
 031975b00e3e86a7945cc161efbacbf2804acf86 assets/gtfomodern/models/item/plastic_bag.json
+3c51f624cbffdf54edc23e74738c15ea282f5fcf assets/gtfomodern/models/item/poblano.json
+0c90ef930cd43d3ac8bf6fe7bdecae2507b3d6fa assets/gtfomodern/models/item/poblano_seeds.json
 ec022ef2b9e203055dddde68a985b590dee3876c assets/gtfomodern/models/item/potato_chip.json
+b60eefb477e74f0dce6fbf22a59ef8fece3019b6 assets/gtfomodern/models/item/serrano.json
+96f09a6fb60e7527239823ae74898ff1ab024f53 assets/gtfomodern/models/item/serrano_seeds.json
+b4f21151d8a58049f878615bb523ca228ca3511d assets/gtfomodern/models/item/thaipepper_seeds.json
+5eaa7ab79f7c1979b1fb8d14398896dda0ebabb2 assets/gtfomodern/models/item/thai_pepper.json
 e6c9002aa343ca272473ee9f837a094390c42c29 assets/gtfomodern/models/item/tomato.json
 e2daa3a661538b43ea89d8e44e62f8c3cde604c3 assets/gtfomodern/models/item/tomato_seeds.json

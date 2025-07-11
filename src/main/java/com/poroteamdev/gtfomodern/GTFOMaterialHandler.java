@@ -14,7 +14,8 @@ import static com.gregtechceu.gtceu.data.material.GTMaterials.*;
 
 public class GTFOMaterialHandler {
     public static void init(){
-        System.out.println("Материал зарегистрирован: " + ISOPROPYL_CHLORIDE.getFluid()); // Должно быть true
+        //Don't pay attention, use it for tests
+        System.out.println("Material registred: " + ISOPROPYL_CHLORIDE.getFluid()); // Должно быть true
         System.out.println("Fluid exists? " + (ISOPROPYL_CHLORIDE.getFluid() != null));
     }
 

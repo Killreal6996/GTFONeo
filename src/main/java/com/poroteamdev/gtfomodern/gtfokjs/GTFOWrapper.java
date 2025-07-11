@@ -1,8 +1,6 @@
 package com.poroteamdev.gtfomodern.gtfokjs;
 
-import com.poroteamdev.gtfomodern.registration.SpicyFoodItems;
-import dev.latvian.mods.kubejs.item.ItemBuilder;
-import net.minecraft.ResourceLocationException;
+import com.poroteamdev.gtfomodern.registration.GTFOSpicyFoodItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -21,8 +19,8 @@ public class GTFOWrapper {
     }
     
     public static void addSpicyToItem(ItemStack stack, Player player, Level level) {
-        if (stack.getItem() instanceof SpicyFoodItems spicyFoodItems) {
-            spicyFoodItems.applySpicyEffects(player, level);
+        if (stack.getItem() instanceof GTFOSpicyFoodItems GTFOSpicyFoodItems) {
+            GTFOSpicyFoodItems.applySpicyEffects(player, level);
         }
     }
 }

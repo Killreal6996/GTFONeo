@@ -1,5 +1,5 @@
 package com.poroteamdev.gtfomodern.gtfokjs;
-import com.poroteamdev.gtfomodern.registration.SpicyFoodItems;
+import com.poroteamdev.gtfomodern.registration.GTFOSpicyFoodItems;
 import dev.latvian.mods.kubejs.item.ItemBuilder;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
@@ -49,7 +49,7 @@ public class SpicyItemBuilder extends ItemBuilder {
                 .effect(() -> createSpicyEffect(kjsSpiciness), 1.0f)
                 .build();
 
-        return new SpicyFoodItems(properties.food(foodProperties), kjsSpiciness) {
+        return new GTFOSpicyFoodItems(properties.food(foodProperties), kjsSpiciness) {
             @Override
             public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity entity) {
                 if (!level.isClientSide && entity instanceof Player player) {
@@ -61,7 +61,7 @@ public class SpicyItemBuilder extends ItemBuilder {
     }
 
     private MobEffectInstance createSpicyEffect(int spiciness) {
-        Holder<MobEffect> effectHolder = SpicyFoodItems.getSpiciness(spiciness);
+        Holder<MobEffect> effectHolder = GTFOSpicyFoodItems.getSpiciness(spiciness);
         //MobEffect effect = effectHolder.value();
         int duration = spiciness / 2000 * 20;
         return new MobEffectInstance(effectHolder, duration, 2);

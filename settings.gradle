@@ -19,24 +19,34 @@ dependencyResolutionManagement {
     versionCatalogs {
         // Minecraft Version
         def minecraftVersion = "1.21"
+        //def minecraftVersion = "1.20.1"
 
         // Mod Dependencies Versions
         // Common
         def jeiVersion = "19.0.0.7"
+        //def jeiVersion = "15.20.0.112"
         def reiVersion = "16.0.729"
+        //def reiVersion = "13.1.713"
         def emiVersion = "1.1.7"
         def ae2Version = "18.1.3-alpha"
+        //def ae2Version = "17.1.0-beta"
         def kjsVersion = "2100.7.0-build.30"
+        //def kjsVersion = "2001.6.5-build.14"
         def gtmVersion = "1.3.1"
+        //def gtmVersion = "1.4.2"
 
         // NeoForge
         def neoForgeVersion = "21.0.17-beta"
+        //def neoForgeVersion = "20.4.206"
         def registrateForgeVersion = "MC1.21-1.3.0+16"
+        //def registrateForgeVersion = "MC1.20-1.3.11"
         def jadeForgeVersion = "15.0.4+neoforge"
         def topForgeVersion = "1.20.4_neo-11.0.0-1"
+        //def topForgeVersion = "1.20.1-10.0.1-3"
 
         // Libs
         def parchmentVersion = "2024.06.02" // https://parchmentmc.org/docs/getting-started
+        //def parchmentVersion = "2023.09.03" // https://parchmentmc.org/docs/getting-started
         def shadowVersion = "7.1.2"
         def macheteVersion = "1.+"
         def configurationVersion = "2.2.3"

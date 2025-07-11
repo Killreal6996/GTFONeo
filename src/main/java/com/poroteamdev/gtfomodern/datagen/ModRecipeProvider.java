@@ -15,7 +15,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static com.gregtechceu.gtceu.api.tag.TagPrefix.*;
 import static com.gregtechceu.gtceu.data.material.GTMaterials.*;
-import static com.poroteamdev.gtfomodern.item.Items.*;
+import static com.poroteamdev.gtfomodern.item.GTFOItems.*;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {

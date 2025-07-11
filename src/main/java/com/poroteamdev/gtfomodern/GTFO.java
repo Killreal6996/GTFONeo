@@ -1,16 +1,19 @@
 package com.poroteamdev.gtfomodern;
 
+import com.gregtechceu.gtceu.api.GTCEuAPI;
 import com.gregtechceu.gtceu.api.material.material.event.MaterialEvent;
+import com.gregtechceu.gtceu.api.registry.GTRegistries;
+import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 import com.gregtechceu.gtceu.utils.FormattingUtil;
-import com.gregtechceu.gtceu.api.registry.*;
 import com.lowdragmc.lowdraglib.Platform;
+import com.poroteamdev.gtfomodern.blocks.machines.CheeseAgingFactoryController;
 import com.poroteamdev.gtfomodern.config.ConfigHolder;
 
-import com.poroteamdev.gtfomodern.blocks.crops.CropBlocks;
-import com.poroteamdev.gtfomodern.blocks.crops.Seeds;
-import com.poroteamdev.gtfomodern.item.Items;
-import com.poroteamdev.gtfomodern.registration.JustToolTips;
-import com.poroteamdev.gtfomodern.registration.SpicyFoodItems;
+import com.poroteamdev.gtfomodern.blocks.crops.GTFOCropBlocks;
+import com.poroteamdev.gtfomodern.item.GTFOSeeds;
+import com.poroteamdev.gtfomodern.item.GTFOItems;
+import com.poroteamdev.gtfomodern.registration.GTFOJustToolTips;
+import com.poroteamdev.gtfomodern.registration.GTFOSpicyFoodItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -25,18 +28,30 @@ public class GTFO {
     public static final String MODID = "gtfomodern";
     public static final String NAME = "GregtechFoodOption";
     public static final Logger LOGGER = LogUtils.getLogger();
+    public static GTRegistrate REGISTRATE = GTRegistrate.create(GTFO.MODID);
     public GTFO(IEventBus modEventBus) {
         //Registering classes
-        ModTabs.register(modEventBus);
-        Items.ITEMS.register(modEventBus);
-        CropBlocks.BLOCKS.register(modEventBus);
-        Seeds.ITEMS.register(modEventBus);
+        GTFOModTabs.register(modEventBus);
 
-        modEventBus.addListener(this::registerGTMaterials);
-        //Initializing
+        GTFOItems.ITEMS.register(modEventBus);
+        LOGGER.info("GTFO items registered");
+
+        GTFOCropBlocks.BLOCKS.register(modEventBus);
+        LOGGER.info("GTFO blocks registered");
+
+        GTFOSeeds.ITEMS.register(modEventBus);
+        LOGGER.info("GTFO seeds registered");
+
+        //GTRegistration.REGISTRATE.registerRegistrate(modEventBus);
+        //CheeseAgingFactoryController.init();
         ConfigHolder.init();
         GTFO.init();
+
+        modEventBus.addListener(this::registerGTMaterials);
         modEventBus.addListener(this::commonSetup);
+
+        modEventBus.addListener(this::registerMachines);
+
     }
 
     private void registerGTMaterials(MaterialEvent event){
@@ -50,10 +65,13 @@ public class GTFO {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            JustToolTips.registerTooltip(Items.TOMATO.get(),
+            LOGGER.info("Well, if you read this - GTFO mod still work!");
+
+            GTFOJustToolTips.registerTooltip(GTFOItems.TOMATO.get(),
                     ()-> Component.translatable("tooltip.gtfomodern.tomato"));
-            SpicyFoodItems.registerTooltip(Items.NAQUACHIP.get(),
+            GTFOSpicyFoodItems.registerTooltip(GTFOItems.NAQUACHIP.get(),
                     () -> Component.translatable("tooltip.gtfomodern.naquachip"));
+            LOGGER.info("Custom tooltips for GTFO items registered");
         });
     }
     
@@ -73,4 +91,9 @@ public class GTFO {
         return ResourceLocation.fromNamespaceAndPath(strings[0], strings[1]);
     }
 
+    private void registerMachines(GTCEuAPI.RegisterEvent event){
+        if (event.getRegistry() == GTRegistries.MACHINES) {
+            CheeseAgingFactoryController.init();
+        }
+    }
 }

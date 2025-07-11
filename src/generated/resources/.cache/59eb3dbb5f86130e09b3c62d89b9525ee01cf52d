@@ -1,2 +1,12 @@
-// 1.21	2025-06-23T20:37:56.3820844	Loot Tables
+// 1.21	2025-07-12T02:22:36.3252218	Loot Tables
+c5173839a6e683763dc8c962ea53d9a2469104c0 data/gtfomodern/loot_table/blocks/bananapepper_crop.json
+d2c854a043311cce233601a9f1d990f3d2e5cd45 data/gtfomodern/loot_table/blocks/bellpepper_crop.json
+0c5d16a75211eb278fd930e617435722d7c9ee4f data/gtfomodern/loot_table/blocks/carolinareaper_crop.json
+76e992bff0ba40144aef8995f6a46b1464cc940c data/gtfomodern/loot_table/blocks/cayennepepper_crop.json
+106da1cde73236b27ef4354018a71766854dd33e data/gtfomodern/loot_table/blocks/habanero_crop.json
+c762191e1049d7c9d8025b670153e33b0ad5d0f0 data/gtfomodern/loot_table/blocks/jalapeno_crop.json
+ac6804af709e390897ee215f119792e8f72ac0c5 data/gtfomodern/loot_table/blocks/pepperonchini_crop.json
+02d0f9570e3eac1852cf351b23b635690aaa3877 data/gtfomodern/loot_table/blocks/poblano_crop.json
+340cd22514bc2a0f164bcc67b6b5a0f0dc57cc2b data/gtfomodern/loot_table/blocks/serrano_crop.json
+9a3ba89568cfab3ab9515148af7b358b1facee6e data/gtfomodern/loot_table/blocks/thaipepper_crop.json
 a5aafda167548addfec4670f44cbe5fb6a724b4e data/gtfomodern/loot_table/blocks/tomato_crop.json

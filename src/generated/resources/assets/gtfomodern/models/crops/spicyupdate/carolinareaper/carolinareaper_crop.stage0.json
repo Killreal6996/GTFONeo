@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "gtfomodern:block/crops/spicyupdate/carolinareaper/carolinareaper_crop.stage0"
+  }
+}

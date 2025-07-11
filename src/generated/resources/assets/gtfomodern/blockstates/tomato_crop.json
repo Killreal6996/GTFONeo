@@ -1,22 +1,22 @@
 {
   "variants": {
     "age=0": {
-      "model": "gtfomodern:block/tomato_crop.stage0"
+      "model": "gtfomodern:crops/italianupdate/tomato/tomato_crop.stage0"
     },
     "age=1": {
-      "model": "gtfomodern:block/tomato_crop.stage1"
+      "model": "gtfomodern:crops/italianupdate/tomato/tomato_crop.stage1"
     },
     "age=2": {
-      "model": "gtfomodern:block/tomato_crop.stage2"
+      "model": "gtfomodern:crops/italianupdate/tomato/tomato_crop.stage2"
     },
     "age=3": {
-      "model": "gtfomodern:block/tomato_crop.stage3"
+      "model": "gtfomodern:crops/italianupdate/tomato/tomato_crop.stage3"
     },
     "age=4": {
-      "model": "gtfomodern:block/tomato_crop.stage4"
+      "model": "gtfomodern:crops/italianupdate/tomato/tomato_crop.stage4"
     },
     "age=5": {
-      "model": "gtfomodern:block/tomato_crop.stage5"
+      "model": "gtfomodern:crops/italianupdate/tomato/tomato_crop.stage5"
     }
   }
 }
