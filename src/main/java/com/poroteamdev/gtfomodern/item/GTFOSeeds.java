@@ -1,21 +1,22 @@
 package com.poroteamdev.gtfomodern.item;
 
-import com.poroteamdev.gtfomodern.blocks.crops.GTFOCropBlocks;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import com.poroteamdev.gtfomodern.blocks.crops.GTFOCropBlocks;
+
 public class GTFOSeeds {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems("gtfomodern");
 
-    //Italy Update
+    // Italy Update
     public static final DeferredHolder<Item, Item> TOMATO_SEEDS = ITEMS.register(
             "tomato_seeds",
             () -> new ItemNameBlockItem(GTFOCropBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
-    //Spicy update
+    // Spicy update
     public static final DeferredHolder<Item, Item> BELLPEPPER_SEEDS = ITEMS.register(
             "bellpepper_seeds",
             () -> new ItemNameBlockItem(GTFOCropBlocks.BELLPEPER_CROP.get(), new Item.Properties()));

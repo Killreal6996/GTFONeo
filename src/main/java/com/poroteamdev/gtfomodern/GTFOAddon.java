@@ -6,14 +6,14 @@ import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
 
 @SuppressWarnings("unused")
 @com.gregtechceu.gtceu.api.addon.GTAddon
-public class GTFOAddon  implements IGTAddon {
+public class GTFOAddon implements IGTAddon {
     @Override
     public GTRegistrate getRegistrate() {
         return GTFO.REGISTRATE;
     }
 
     @Override
-    public void registerTagPrefixes(){}
+    public void registerTagPrefixes() {}
 
     @Override
     public void initializeAddon() {

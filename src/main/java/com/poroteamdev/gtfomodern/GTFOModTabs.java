@@ -48,7 +48,7 @@ public class GTFOModTabs {
                     .icon(() -> new ItemStack(GTFOItems.TOMATO.get()))
                     .title(Component.translatable("creativetab.gtfocomponentedibletab"))
                     .displayItems(((pParameters, pOutput) -> {
-                        //vegetables, fruits, berries
+                        // vegetables, fruits, berries
                         pOutput.accept(GTFOItems.TOMATO.get());
 
                         pOutput.accept(GTFOItems.BELLPEPPER.get());
@@ -62,7 +62,7 @@ public class GTFOModTabs {
                         pOutput.accept(GTFOItems.HABANERO.get());
                         pOutput.accept(GTFOItems.CAROLINA_REAPER.get());
 
-                        //edible components
+                        // edible components
                         pOutput.accept(GTFOItems.PEELED_POTATO.get());
                         pOutput.accept(GTFOItems.POTATO_CHIP.get());
                         pOutput.accept(GTFOItems.NAQUADAH_CHIP.get());
@@ -82,8 +82,7 @@ public class GTFOModTabs {
             GTFO_TAB.register("tool_tab", () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(GTFOItems.NAQUACHIP.get()))
                     .title(Component.translatable("creativetab.gtfoinstrumentsandmachinestab"))
-                    .displayItems(((pParameters, pOutput) -> {
-                    }))
+                    .displayItems(((pParameters, pOutput) -> {}))
                     .build());
 
     public static void register(IEventBus eventBus) {
