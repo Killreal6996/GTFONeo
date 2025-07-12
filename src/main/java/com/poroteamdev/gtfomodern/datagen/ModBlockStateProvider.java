@@ -32,43 +32,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        /*
-        makeCrop(((CropBlock) GTFOCropBlocks.TOMATO_CROP.get()),
-                "tomato_crop.stage", "tomato_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.BELLPEPER_CROP.get()),
-                "bellpepper_crop.stage", "bellpepper_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.PEPPERONCHINI_CROP.get()),
-                "pepperonchini_crop.stage", "pepperonchini_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.BANANAPEPPER_CROP.get()),
-                "bananapepper_crop.stage", "bananapepper_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.POBLANO_CROP.get()),
-                "poblano_crop.stage", "poblano_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.JALAPENO_CROP.get()),
-                "jalapeno_crop.stage", "jalapeno_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.SERRANO_CROP.get()),
-                "serrano_crop.stage", "serrano_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.CAYENNEPEPPER_CROP.get()),
-                "cayennepepper_crop.stage", "cayennepepper_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.THAIPEPPER_CROP.get()),
-                "thaipepper_crop.stage", "thaipepper_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.HABANERO_CROP.get()),
-                "habanero_crop.stage", "habanero_crop.stage");
-
-        makeCrop(((CropBlock) GTFOCropBlocks.CAROLINAREAPER_CROP.get()),
-                "carolinareaper_crop.stage", "carolinareaper_crop.stage");
-        */
-
         this.stageBlock(GTFOCropBlocks.TOMATO_CROP.get(), Tomato.AGE, "italianupdate/","tomato/");
-
         this.stageBlock(GTFOCropBlocks.BELLPEPER_CROP.get(), BellPepper.AGE, "spicyupdate/","bellpepper/");
         this.stageBlock(GTFOCropBlocks.PEPPERONCHINI_CROP.get(), Pepperonchini.AGE, "spicyupdate/","pepperonchini/");
         this.stageBlock(GTFOCropBlocks.BANANAPEPPER_CROP.get(), BananaPepper.AGE, "spicyupdate/","bananapepper/");
@@ -81,25 +45,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         this.stageBlock(GTFOCropBlocks.CAROLINAREAPER_CROP.get(), CarolinaReaper.AGE, "spicyupdate/","carolinareaper/");
     }
 
-    /*private void blockWithItem(DeferredBlock<?> deferredBlock){
-        simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
-    }*/
-
-    /*public void makeCrop(CropBlock block, String modelName, String textureName) {
-        Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
-
-        getVariantBuilder(block).forAllStates(function);
-    }*/
-
-    /*public ConfiguredModel[] states(BlockState state, CropBlock block, String modelName, String texturename){
-        ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((Tomato) block).getAgeProperty()),
-                ResourceLocation.fromNamespaceAndPath(GTFO.MODID,"block/crops/italianupdate/tomato/"+texturename+state.getValue(((Tomato) block).
-                        getAgeProperty()))).renderType("cutout"));
-        return models;
-    }*/
-
-    //Got this method from Farmer Delight repo (https://github.com/vectorwing/FarmersDelight/blob/1.21/src/main/java/vectorwing/farmersdelight/data/BlockStates.java)
+    //Got these methods from Farmer Delight repo (https://github.com/vectorwing/FarmersDelight/blob/1.21/src/main/java/vectorwing/farmersdelight/data/BlockStates.java)
     public void customStageBlock(Block block, @Nullable ResourceLocation parent, String textureKey, IntegerProperty ageProperty, List<Integer> suffixes, Property<?>... ignored) {
         getVariantBuilder(block)
                 .forAllStatesExcept(state -> {

@@ -1,6 +1,7 @@
 package com.poroteamdev.gtfomodern.datagen;
 
 
+
 import com.gregtechceu.gtceu.data.recipe.GTRecipeTypes;
 import com.poroteamdev.gtfomodern.GTFO;
 import com.poroteamdev.gtfomodern.GTFOMaterialHandler;
@@ -12,6 +13,7 @@ import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
+
 
 import static com.gregtechceu.gtceu.api.tag.TagPrefix.*;
 import static com.gregtechceu.gtceu.data.material.GTMaterials.*;
@@ -67,5 +69,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         /*GTRecipeTypes.ASSEMBLER_RECIPES.recipeBuilder("gtfomodern:naqua_chips_recipe")
                 .inputItems()*/
+
     }
 }

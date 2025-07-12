@@ -1,13 +1,11 @@
 package com.poroteamdev.gtfomodern;
 
-import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
-import com.gregtechceu.gtceu.data.material.GTMaterials;
+
 import com.gregtechceu.gtceu.api.fluid.FluidBuilder;
+
 import com.gregtechceu.gtceu.api.fluid.attribute.FluidAttributes;
 import com.gregtechceu.gtceu.api.fluid.store.FluidStorageKeys;
 import com.gregtechceu.gtceu.api.material.material.Material;
-
-import javax.annotation.PropertyKey;
 
 import static com.gregtechceu.gtceu.api.material.material.info.MaterialFlags.*;
 import static com.gregtechceu.gtceu.data.material.GTMaterials.*;

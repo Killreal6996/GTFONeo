@@ -61,6 +61,7 @@ public class GTFOItems {
             )
     );
 
+    //Peppers
     public static final DeferredHolder<Item, Item> BELLPEPPER =
             ITEMS.register("bellpepper", () -> new GTFOSpicyFoodItems(
                     new Item.Properties()
@@ -78,7 +79,7 @@ public class GTFOItems {
             ));
 
     public static final DeferredHolder<Item, Item> BANANA_PEPPER =
-            ITEMS.register("banana_pepper", () -> new GTFOSpicyFoodItems(
+            ITEMS.register("bananapepper", () -> new GTFOSpicyFoodItems(
                     new Item.Properties()
                             .food(GTFOFooditemsTypes.PEPPER)
                             .setNoRepair(),
@@ -118,7 +119,7 @@ public class GTFOItems {
             ));
 
     public static final DeferredHolder<Item, Item> THAI_PEPPER =
-            ITEMS.register("thai_pepper", () -> new GTFOSpicyFoodItems(
+            ITEMS.register("thaipepper", () -> new GTFOSpicyFoodItems(
                     new Item.Properties()
                             .food(GTFOFooditemsTypes.PEPPER)
                             .setNoRepair(),
@@ -134,7 +135,7 @@ public class GTFOItems {
             ));
 
     public static final DeferredHolder<Item, Item> CAROLINA_REAPER =
-            ITEMS.register("carolina_reaper", () -> new GTFOSpicyFoodItems(
+            ITEMS.register("carolinareaper", () -> new GTFOSpicyFoodItems(
                     new Item.Properties()
                             .food(GTFOFooditemsTypes.PEPPER)
                             .setNoRepair(),

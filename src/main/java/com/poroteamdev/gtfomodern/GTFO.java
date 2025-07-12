@@ -16,12 +16,14 @@ import com.poroteamdev.gtfomodern.registration.GTFOJustToolTips;
 import com.poroteamdev.gtfomodern.registration.GTFOSpicyFoodItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
 import com.mojang.logging.LogUtils;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.slf4j.Logger;
+import org.spongepowered.asm.launch.platform.MixinPlatformAgentMinecraftForge;
 
 @Mod(GTFO.MODID)
 public class GTFO {
@@ -47,7 +49,8 @@ public class GTFO {
         ConfigHolder.init();
         GTFO.init();
 
-        modEventBus.addListener(this::registerGTMaterials);
+
+        modEventBus.addListener(EventPriority.NORMAL, false, MaterialEvent.class, this::registerGTMaterials);
         modEventBus.addListener(this::commonSetup);
 
         modEventBus.addListener(this::registerMachines);
@@ -93,7 +96,7 @@ public class GTFO {
 
     private void registerMachines(GTCEuAPI.RegisterEvent event){
         if (event.getRegistry() == GTRegistries.MACHINES) {
-            CheeseAgingFactoryController.init();
+            //CheeseAgingFactoryController.init();
         }
     }
 }

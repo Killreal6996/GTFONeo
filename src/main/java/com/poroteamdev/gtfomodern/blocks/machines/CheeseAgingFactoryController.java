@@ -1,6 +1,5 @@
 package com.poroteamdev.gtfomodern.blocks.machines;
 
-
 import com.gregtechceu.gtceu.api.RotationState;
 import com.gregtechceu.gtceu.api.block.IMachineBlock;
 import com.gregtechceu.gtceu.api.machine.MultiblockMachineDefinition;
@@ -12,6 +11,7 @@ import net.minecraft.network.chat.Component;
 
 import static com.gregtechceu.gtceu.api.multiblock.Predicates.blocks;
 import static com.gregtechceu.gtceu.data.block.GTBlocks.*;
+
 
 public class CheeseAgingFactoryController {
 

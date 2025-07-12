@@ -4,6 +4,7 @@ repositories {
     }
     mavenCentral()
     maven { url = "https://api.modrinth.com/maven" } // Modrinth Maven
+    maven { url = "https://api.repsy.io/mvn/toma/public"} // Toma mirror
     maven { url = "https://maven.shedaniel.me/" } // Cloth Config, REI
     maven {
         url "https://cursemaven.com"
@@ -37,7 +38,7 @@ repositories {
     }
     maven {
         // saps.dev Maven (KubeJS and Rhino)
-        url = "https://maven.saps.dev/minecraft"
+        url = "https://maven.latvian.dev/releases"
         content {
             includeGroup "dev.latvian.mods"
         }
